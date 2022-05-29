@@ -10,6 +10,7 @@ import com.tiktok.android.movielibrary.fragments.HomeFragment
 import com.tiktok.android.movielibrary.fragments.WatchlistFragment
 import kotlinx.android.synthetic.main.fragment_home.*
 import kotlinx.android.synthetic.main.fragment_watchlist.*
+import java.io.File
 
 class MainActivity : AppCompatActivity() {
     private val homeFragment = HomeFragment()
