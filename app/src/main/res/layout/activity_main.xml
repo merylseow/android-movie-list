@@ -4,7 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvMovieList"
@@ -28,6 +30,20 @@
         android:id="@+id/fragment_container"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_above="@id/bottom_navigation" />
+        android:layout_above="@id/panda_animation"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="26dp" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/panda_animation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/bottom_navigation"
+        android:paddingTop="300dp"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="panda_animation.json"
+        app:lottie_loop="true"
+        app:lottie_speed="1"
+        tools:ignore="ContentDescription,MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

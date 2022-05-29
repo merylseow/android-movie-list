@@ -15,6 +15,7 @@ import kotlinx.android.synthetic.main.fragment_watchlist.*
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
+import java.io.File
 
 class MainActivity : AppCompatActivity() {
     private val homeFragment = HomeFragment()
